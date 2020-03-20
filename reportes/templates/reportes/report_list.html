@@ -1,0 +1,30 @@
+{% extends 'reportes/base.html' %}
+
+{% block content %} 
+        <div class="table-wrapper">
+                    <table class="fl-table" align="center">
+						<thead>
+								<th class="column1">id</th>
+								<th class="column2">type_id</th>
+								<th class="column3">company_id</th>
+								<th class="column4">uuid</th>
+								<th class="column5">receiver</th>
+                                <th class="column6">created_at</th>
+							</tr>
+						</thead>
+                            {% for bill in bills %}
+						<tbody>
+								<tr>
+									<td class="column1">{{ bill.pk }}</td>
+									<td class="column2">{{ bill.type_id }}</td>
+									<td class="column3">{{ bill.company_id }}</td>
+									<td class="column4">{{ bill.uuid }}</td>
+									<td class="column5">{{ bill.receiver }}</td>
+									<td class="column6">{{ bill.created_at }}</td>
+								</tr>
+						</tbody>
+                        {% endfor %} 
+					</table>
+                </div>
+            </div>
+{% endblock %}

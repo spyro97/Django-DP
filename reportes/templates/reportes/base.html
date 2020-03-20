@@ -1,0 +1,28 @@
+{% load static %}
+<html>
+
+<head>
+    <title>D-portenis Reportes</title>
+     <!--===============================================================================================-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="{% static 'css/reportes.css' %}">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+    <div class="page-header">
+        {% if user.is_authenticated %}
+            <p class="top-menu">Hola {{ user.username }} <small>(<a href="{% url 'logout' %}">Cerrar Sessión</a>)</small></p>
+        {% else %}
+            <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+        {% endif %}
+        <img src="{% static 'img/logoo.png' %}" height=7% alt="Deportennis Logo">
+    </div>
+        
+        {% block content %} {% endblock %}
+        
+</body>
+
+</html>
