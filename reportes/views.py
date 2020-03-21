@@ -3,6 +3,8 @@ from django.contrib.auth.decorators import login_required
 from django.utils import timezone
 from django.http import FileResponse, HttpResponse
 from .models import Bills
+from .tables import SimpleTable
+from .filters import BillsFilter
 import xml.etree.cElementTree as ET
 
 def report_list(request):
@@ -22,4 +24,11 @@ def xml_doc(request, pk):
 def report_search(request, pk):
     bill_data = get_object_or_404(Bills, pk=pk)
     return render(request, 'reportes/report_search.html', {'bills':bill_data})
+
+def report_list2(request):
+    bills = Bills.objects.all()
+    myFilter = BillsFilter(request.GET, queryset=bills)
+    bills = myFilter.qs
+    table = SimpleTable(bills)
+    return render(request, 'reportes/report_list2.html', {'table': table, 'myFilter':myFilter})
     

@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'reportes.apps.ReportesConfig',
+    'django_tables2',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +123,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/'
+
+DJANGO_TABLES2_TEMPLATE = "django_tables2/bootstrap4.html"

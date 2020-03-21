@@ -3,7 +3,7 @@ from django.conf import settings
 from django.utils import timezone
 
 class Bills(models.Model):
-    company_id = models.IntegerField()
+    company_id = models.IntegerField(verbose_name='Id compañia')
     type_id = models.IntegerField()
     uuid = models.CharField(max_length=255)
     receiver = models.CharField(max_length=255)
