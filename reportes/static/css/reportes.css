@@ -1,7 +1,7 @@
 .page-header {
     background-color: #f1f1f1;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 10px 10px 10px 10px;
 }
 
 .top-menu,
@@ -9,8 +9,28 @@
 .top-menu:visited {
     color: #5d90e8;
     float: right;
-    font-size: 26pt;
+    font-size: 20pt;
     margin-right: 20px;
+    margin-top: 20px;
+}
+
+.wrapper {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.button {
+    margin-left: 70px;
+    top: 50%;
+}
+
+
+/* Table Login*/
+
+.login-table {
+    text-align: center;
+    margin-top: 50px;
 }
 
 
@@ -46,7 +66,7 @@
 
 .fl-table thead th {
     color: #ffffff;
-    background: #4FC3A1;
+    background: #5d90e8;
 }
 
 .fl-table thead th:nth-child(odd) {

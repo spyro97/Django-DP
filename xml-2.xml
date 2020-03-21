@@ -1,0 +1,28 @@
+<ns0:Comprobante xmlns:ns0="http://www.sat.gob.mx/cfd/3" xmlns:ns2="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Certificado="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" Descuento="0.00" Fecha="2020-03-09T10:09:03" Folio="0094102524" FormaPago="99" LugarExpedicion="80000" MetodoPago="PPD" Moneda="MXN" NoCertificado="00001000000405329432" Sello="KR8H5Wu25HKQr1HKsawevfKvAk8v5a/E7R/lG5bfdtGPVXkZguTjJvUWdL47Nqh1Fz7T+COe9zkQdJaX8ikuIu0CPWeBH5XtISoqbmcPCEOxNxF440ayDslWRPDhQS+N7Dgq1oHnwQY4NVzOcEFDugDidbBZ0A70a6xol/zP7r6HU6UVGXlDFwVPPNkvnNPkq9CkGuvJQhItZ1YePo1HGLmN7dS+6fwVd+JCjQ74XRfgDI276Qu/neElFTteUpNQSsV2PH2JVbLOruHQasK1ecGoxvwUtz3lzZFG95C++mKPPf0NbMe5l0SI4DUWUPFtxR4UJvAMfYbWlIzO2muOiw==" SubTotal="1851.72" TipoDeComprobante="I" Total="2148.00" Version="3.3" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd ">
+  <ns0:Emisor Nombre="Comercial Dportenis, SA de CV" RegimenFiscal="601" Rfc="CDP9501269M5" />
+  <ns0:Receptor Rfc="XAXX010101000" UsoCFDI="P01" />
+  <ns0:Conceptos>
+    <ns0:Concepto Cantidad="1.00" ClaveProdServ="54111500" ClaveUnidad="H87" Descripcion="Folio: DPVL-WFHUKDY7MQ U CASIO VINTAGE, U, Dorado/Negro -" Descuento="0.00" Importe="1335.34" NoIdentificacion="000000004008898001" ValorUnitario="1335.34">
+      <ns0:Impuestos>
+        <ns0:Traslados>
+          <ns0:Traslado Base="1335.34" Importe="213.6544" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa" />
+        </ns0:Traslados>
+      </ns0:Impuestos>
+    </ns0:Concepto>
+    <ns0:Concepto Cantidad="1.00" ClaveProdServ="54111500" ClaveUnidad="H87" Descripcion="Folio: DPVL-WFHUKDY7MQ U RELOJ SKETCHER DAMA SR, U, Negro/Negro -" Descuento="0.00" Importe="516.38" NoIdentificacion="000000004005366001" ValorUnitario="516.38">
+      <ns0:Impuestos>
+        <ns0:Traslados>
+          <ns0:Traslado Base="516.38" Importe="82.6208" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa" />
+        </ns0:Traslados>
+      </ns0:Impuestos>
+    </ns0:Concepto>
+  </ns0:Conceptos>
+  <ns0:Impuestos TotalImpuestosTrasladados="296.28">
+    <ns0:Traslados>
+      <ns0:Traslado Importe="296.28" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa" />
+    </ns0:Traslados>
+  </ns0:Impuestos>
+  <ns0:Complemento>
+    <ns2:TimbreFiscalDigital FechaTimbrado="2020-03-09T11:09:02" NoCertificadoSAT="00001000000408254801" RfcProvCertif="LSO1306189R5" SelloCFD="KR8H5Wu25HKQr1HKsawevfKvAk8v5a/E7R/lG5bfdtGPVXkZguTjJvUWdL47Nqh1Fz7T+COe9zkQdJaX8ikuIu0CPWeBH5XtISoqbmcPCEOxNxF440ayDslWRPDhQS+N7Dgq1oHnwQY4NVzOcEFDugDidbBZ0A70a6xol/zP7r6HU6UVGXlDFwVPPNkvnNPkq9CkGuvJQhItZ1YePo1HGLmN7dS+6fwVd+JCjQ74XRfgDI276Qu/neElFTteUpNQSsV2PH2JVbLOruHQasK1ecGoxvwUtz3lzZFG95C++mKPPf0NbMe5l0SI4DUWUPFtxR4UJvAMfYbWlIzO2muOiw==" SelloSAT="SB3jU6y+e2hCUWMiWu7AFLf81kRik6PG0RNQ1TcB/vfsfI6787G1OZB/oh0+GdZSymMTs2B2L9QDFIt9yI6+Ma0lWHMQDaQu33l8lnAbO4ZY4LpVEJZIG1NEaT3ZOirqGJ4yae+qYwcioWF4lEKdEi6c0jLcdJid93qvx17SKcrZfKydXJQ5c9YNLEaHRG7Z2APo21Tszmn2U2hwLuEARHQPgO881x9NhoRO6P8JvZOI+WnyyoffRfsvIsmfrc/yrzUSISqUH/oOQwo87ZZoioO868J4XtAeg4x9kjL81SaHIyePgUJ/FbiC8NyUxw1yZPpK386BWHMwPig1ZX4Tiw==" UUID="cc9f8bcd-24bd-4938-be11-447aa7e66032" Version="1.1" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" />
+  </ns0:Complemento>
+<doc /></ns0:Comprobante>

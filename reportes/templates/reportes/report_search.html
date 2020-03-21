@@ -1,0 +1,38 @@
+{% extends 'reportes/base.html' %} {% block content %}
+<div class="table-wrapper">
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="Buscar" placeholder="ID" aria-label="Buscar">
+            <a href="{% url 'report_search' pk=bills.pk %}" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</a>
+        </form>
+    </nav>
+    <table class="fl-table" align="center">
+        <thead>
+            <th class="column1">ID</th>
+            <th class="column2">TIPO ID</th>
+            <th class="column3">COMPAÑIA</th>
+            <th class="column4">UUID</th>
+            <th class="column5">RECEPTOR</th>
+            <th class="column6">XML</th>
+            <th class="column7">PDF</th>
+            <th class="column8">FECHA CREADO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="column1">{{ bills.pk }}</td>
+                <td class="column2">{{ bills.type_id }}</td>
+                <td class="column3">{{ bills.company_id }}</td>
+                <td class="column4">{{ bills.uuid }}</td>
+                <td class="column5">{{ bills.receiver }}</td>
+                <td class="column6">
+                    <a href="{% url 'xml_doc' pk=bills.pk %}"> <img src='static/img/xml.png' height=7% alt="Deportennis Logo"><a/></td>
+                <td class="column7">
+                    <a href="#"><img src='static/img/pdf.png' height=7% alt="Deportennis Logo"><a/></td>
+                <td class="column8">{{ bills.created_at }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+{% endblock %}
