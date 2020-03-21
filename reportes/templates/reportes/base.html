@@ -19,7 +19,7 @@
         <p class="top-menu">Hola {{ user.username }} <small>(<a href="{% url 'logout' %}">Cerrar Sessión</a>)</small></p>
         {% else %}
         <a href="{% url 'login' %}" class="top-menu"><i class="fas fa-user-lock"></i></a> {% endif %}
-        <img src="{% static 'img/logo.png' %}" height=7% alt="Deportennis Logo">
+        <img src="{% static 'img/logoo.png' %}" height=7% alt="Deportennis Logo">
     </div>
 
     {% block content %} {% endblock %}
