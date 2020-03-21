@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'reportes.apps.ReportesConfig',
     'django_tables2',
     'django_filters',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,5 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/'
 
 DJANGO_TABLES2_TEMPLATE = "django_tables2/bootstrap4.html"
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

@@ -3,7 +3,7 @@
 
 <head>
     <title>D-portenis Reportes</title>
-     <!--===============================================================================================-->
+    <!--===============================================================================================-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <!--===============================================================================================-->
@@ -16,15 +16,14 @@
 <body>
     <div class="page-header">
         {% if user.is_authenticated %}
-            <p class="top-menu">Hola {{ user.username }} <small>(<a href="{% url 'logout' %}">Cerrar Sessión</a>)</small></p>
+        <p class="top-menu">Hola {{ user.username }} <small>(<a href="{% url 'logout' %}">Cerrar Sessión</a>)</small></p>
         {% else %}
-            <a href="{% url 'login' %}" class="top-menu"><i class="fas fa-user-lock"></i></a>
-        {% endif %}
-        <img src="{% static 'img/logoo.png' %}" height=7% alt="Deportennis Logo">
+        <a href="{% url 'login' %}" class="top-menu"><i class="fas fa-user-lock"></i></a> {% endif %}
+        <img src="{% static 'img/logo.png' %}" height=7% alt="Deportennis Logo">
     </div>
-        
-        {% block content %} {% endblock %}
-        
+
+    {% block content %} {% endblock %}
+
 </body>
 
 </html>

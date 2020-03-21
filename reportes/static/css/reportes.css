@@ -25,6 +25,17 @@
     top: 50%;
 }
 
+.busquedas {
+    margin-top: 20px
+}
+
+.form_busquedas {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
 
 /* Table Login*/
 
@@ -145,5 +156,60 @@
     .fl-table tbody td {
         display: block;
         text-align: center;
+    }
+}
+
+
+/* Style the form - display items horizontally */
+
+.form-inline {
+    text-align: center;
+    padding: 6px 70px;
+    font-weight: bold;
+}
+
+
+/* Add some margins for each label */
+
+.form-inline label {
+    margin: 5px 10px 5px 0;
+}
+
+
+/* Style the input fields */
+
+.form-inline input {
+    vertical-align: center;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+
+/* Style the submit button */
+
+.form-inline button {
+    padding: 6px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    border-radius: 6px;
+}
+
+.form-inline button:hover {
+    background-color: royalblue;
+}
+
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+
+@media (max-width: 800px) {
+    .form-inline input {
+        margin: 10px 0;
+    }
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
     }
 }
