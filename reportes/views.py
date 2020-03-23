@@ -7,9 +7,15 @@ from .tables import SimpleTable
 from .filters import BillsFilter
 import xml.etree.cElementTree as ET
 
+
 def report_list(request):
     bills = Bills.objects.all()
-    return render(request, 'reportes/report_list.html', {'bills':bills})
+    myFilter = BillsFilter(request.GET, queryset=bills)
+    bills = myFilter.qs
+    table = SimpleTable(bills)
+    table.paginate(page=request.GET.get("page", 1), per_page=12)
+    return render(request, 'reportes/report_list.html', {'table': table, 'myFilter':myFilter})
+
 
 def xml_doc(request, pk):
     data = get_object_or_404(Bills, pk=pk)
@@ -20,15 +26,4 @@ def xml_doc(request, pk):
     response['Content-Type'] = 'text/plain'
     response['Content-Disposition'] = 'attachment; filename=xml'+str(pk)+'.xml'
     return response
-
-def report_search(request, pk):
-    bill_data = get_object_or_404(Bills, pk=pk)
-    return render(request, 'reportes/report_search.html', {'bills':bill_data})
-
-def report_list2(request):
-    bills = Bills.objects.all()
-    myFilter = BillsFilter(request.GET, queryset=bills)
-    bills = myFilter.qs
-    table = SimpleTable(bills)
-    return render(request, 'reportes/report_list2.html', {'table': table, 'myFilter':myFilter})
     
