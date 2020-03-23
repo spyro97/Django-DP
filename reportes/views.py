@@ -19,11 +19,16 @@ def report_list(request):
 
 def xml_doc(request, pk):
     data = get_object_or_404(Bills, pk=pk)
+    print(data)
+    print(data.xml)
+    id= data.id
     root = ET.fromstring(data.xml)
+    print(root)
     doc = ET.SubElement(root, "doc")
     tree = ET.ElementTree(root)
-    response = HttpResponse(open("xml-"+str(pk)+".xml", 'rb').read())
+    tree.write("xml/xml-"+str(id)+".xml")
+    response = HttpResponse(open("xml/xml-"+str(id)+".xml", 'rb').read())
     response['Content-Type'] = 'text/plain'
-    response['Content-Disposition'] = 'attachment; filename=xml'+str(pk)+'.xml'
+    response['Content-Disposition'] = 'attachment; filename=xml'+str(id)+'.xml'
     return response
     

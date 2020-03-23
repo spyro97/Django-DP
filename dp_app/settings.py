@@ -25,7 +25,7 @@ SECRET_KEY = '-1w-40mhv^c88-_!3+d2&3l4%s839=vx*!ctk5!)88oqw4h$(e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,11 +78,15 @@ WSGI_APPLICATION = 'dp_app.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'arafactu_andb',
+            'USER': 'arafactu_dport',
+            'PASSWORD': 'D3port3n1s1290',
+            'HOST': 'arafacturacion.webaccess.mx',
+            'PORT': '3306',
+        }
     }
-}
 
 
 # Password validation
